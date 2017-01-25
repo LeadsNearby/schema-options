@@ -1,0 +1,1045 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"slide",
+				"slideout-form-header"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"border-",
+				"border-top"
+			],
+			[
+				"hntr",
+				"hntr-header-phn-container"
+			],
+			[
+				"servi",
+				"service-area-toggle"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"lba",
+				"lba-header-logo-row"
+			],
+			[
+				"cu",
+				"lba-custom-animation"
+			],
+			[
+				"lba-",
+				"lba-main-nav"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"bao",
+				"background-color"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"skew",
+				"skew-fix"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"hntr-foo",
+				"hntr-footer-top-inner"
+			],
+			[
+				"ligh",
+				"light-gradient-bottom-to-top"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"logo",
+				"logo_url"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"fn",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"has-car",
+				"has-caret-after"
+			],
+			[
+				"border-bo",
+				"border-bottom-width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"has-",
+				"has-caret-before"
+			],
+			[
+				"colu",
+				"column-count"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"fusion-button",
+				"fusion-button-text"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"bottom",
+				"bottom-color"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"dar",
+				"dark-gray"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"border-t",
+				"border-style"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"animated-panle-h",
+				"animated-panel-hover-hide"
+			],
+			[
+				"animated-panel",
+				"animated-panel-button"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"hunter",
+				"hunter-mascot-container"
+			],
+			[
+				"ani",
+				"animated-panels-container"
+			],
+			[
+				"anim",
+				"animated-panel-color-overlay"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"overf",
+				"overflow-hidden"
+			],
+			[
+				"animated-",
+				"animated-panel-bkg-img"
+			],
+			[
+				"animated",
+				"animated-panel-inner"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"backgou",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"phon",
+				"phone-num-label"
+			],
+			[
+				"top",
+				"top-header-phone-numbers"
+			],
+			[
+				"mainstage-h",
+				"mainstage-horizontal-form-white-line"
+			],
+			[
+				"mainstage-",
+				"mainstage-horizontal-form-top-border"
+			],
+			[
+				"wid",
+				"widget"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"user",
+				"userLongCookie"
+			],
+			[
+				"ind",
+				"individualCookies"
+			],
+			[
+				"get",
+				"getCookie"
+			],
+			[
+				"geo",
+				"geoCookie"
+			],
+			[
+				"fu",
+				"fusionButton"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"gform",
+				"gform_wrapper"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"w",
+				"widget"
+			],
+			[
+				"fusion-",
+				"fusion-button"
+			],
+			[
+				"aad",
+				"aad-icon-bar"
+			],
+			[
+				"mains",
+				"mainstage-reviews-column"
+			],
+			[
+				"c",
+				"cover"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"lnb-",
+				"lnb-schema-description-text"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fusion",
+				"fusion-row"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"curre",
+				"currentMapMarker"
+			],
+			[
+				"next",
+				"nextMapMarker"
+			],
+			[
+				"ne",
+				"nextMapMarker"
+			],
+			[
+				"home",
+				"homeMapMarker"
+			],
+			[
+				"curr",
+				"currentMapMarker"
+			],
+			[
+				"home-map",
+				"home-map-marker-active"
+			],
+			[
+				"map",
+				"mapMarkerFunction"
+			],
+			[
+				"admin",
+				"adminBarOffset"
+			],
+			[
+				"mainstage-horizontal-form-inn",
+				"mainstage-horizontal-form-inner-wrapper"
+			],
+			[
+				"mainsta",
+				"mainstage-horizontal-form"
+			],
+			[
+				"fon-",
+				"font-family"
+			],
+			[
+				"home-mpa",
+				"home-map-review-content"
+			],
+			[
+				"home-m",
+				"home-map-marker-active"
+			],
+			[
+				"homem",
+				"homeMapReviewTitle"
+			],
+			[
+				"featured",
+				"featuredServiceLink"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"fuion",
+				"fusion-row"
+			],
+			[
+				"text",
+				"textReplacement"
+			],
+			[
+				"mainst",
+				"mainstage-horizontal-form"
+			],
+			[
+				"minas",
+				"mainstage-call-banner-inner"
+			],
+			[
+				"banner-call",
+				"banner-call-number"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"display",
+				"display-none"
+			],
+			[
+				"st",
+				"sticky-element"
+			],
+			[
+				"gmf",
+				"gform_wrapper"
+			],
+			[
+				"conte",
+				"content-wrapper"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"stic",
+				"stick-form"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: isntall",
+		"selected_items":
+		[
+			[
+				"Package Control: isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Andrew/Google Drive/LNB Clients/Clients - Current/Hunter Heat & Air LLC/2016 Website/Icons/icon-plumbing-clog.svg",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/Less2Css/README.md",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Hunter/hunter.css",
+		"/C/Users/Andrew/Google Drive/LNB Clients/Clients - Current/Hunter Heat & Air LLC/2016 Website/Icons/Cleaned for web/icon-wrench.svg",
+		"/C/Users/Andrew/Google Drive/LNB Clients/Clients - Current/Hunter Heat & Air LLC/2016 Website/Icons/Cleaned for web/icon-repairs.svg",
+		"/C/Users/Andrew/Google Drive/LNB Plugin Dev/Convert img to svg/index.php",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/main.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Gen Less/mixins.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/main.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/header-styles.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/nav-styles.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/custom-variables.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/custom-mixins.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LBA/icon-styles.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Hunter/hunter.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/All American Door/allamericandoor.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/All American Door/allamericandoor.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LNB/custom.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/LNB/custom.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Barbosa/barbosa.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Barbosa/barbosa.less",
+		"/C/Users/Andrew/Downloads/menu-icon-02.svg",
+		"/C/Users/Andrew/Google Drive/LNB Plugin Dev/Schema Plugin/main.php",
+		"/C/Users/Andrew/Downloads/image-quotes.svg",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/AAP/aap.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/AAP/aap.less",
+		"/C/Users/Andrew/Downloads/LNB-stars.svg",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Pipe Surgeons/pipesurgeons.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Pipe Surgeons/pipesurgeons.less",
+		"/C/Users/Andrew/Desktop/geoLocationScript.js",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/morrow.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/morrow-new.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/morrow-new.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Gen Less/colors.less",
+		"/C/Users/Andrew/Downloads/lnb-tech-pro/lnb-tech-pro/tech-profiles.php",
+		"/C/Users/Andrew/Downloads/custom-fields-for-post-and-pages/custom-fields-for-post-and-pages/ri_cf.php",
+		"/C/Users/Andrew/Downloads/custom-fields-for-post-and-pages/custom-fields-for-post-and-pages/js/ricf.js",
+		"/C/Users/Andrew/Downloads/custom-fields-for-post-and-pages/custom-fields-for-post-and-pages/index.php",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/WaterCure/watercure-new.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/WaterCure/watercure-new.less",
+		"/C/Users/Andrew/Downloads/basic-sticky-form/basic-sticky-form.js",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/WaterCure/watercure.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/WaterCure/watercure.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Gen Less/colors.css",
+		"/C/Users/Andrew/Downloads/basic-sticky-form/basic-sticky-form.css",
+		"/C/Users/Andrew/Downloads/basic-sticky-form/basic-sticky-form.php",
+		"/C/Users/Andrew/Downloads/Sticky-Form/basic sticky form.php",
+		"/C/Users/Andrew/Downloads/Sticky-Form/sticky form.js",
+		"/C/Users/Andrew/Downloads/Sticky-Form/sticky form.php",
+		"/C/Users/Andrew/Downloads/sticky form.js",
+		"/C/Users/Andrew/Downloads/animate.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Gen Less/mixins.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Gen Less/custom.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/morrow.css",
+		"/C/wamp/www/themedev/wp-config.php",
+		"/C/wamp/www/themedev/index.php",
+		"/C/Users/Andrew/Downloads/index.html",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Your Air/yourair.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Your Air/yourair.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Miranda Electrician/miranda.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Miranda Electrician/miranda.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Al's Plumbing/alsplumbing.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/styles.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Morrow/styles.less",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Miranda HVAC/miranda.css",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Miranda HVAC/miranda.less",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/CSS Format/README.md",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/Theme - Default/Default.sublime-theme",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Andrew/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Andrew/Downloads/sidebar.php",
+		"/C/Users/Andrew/Downloads/header (1).php",
+		"/C/Users/Andrew/Downloads/header.php",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Al's Plumbing/alsplumbing.css",
+		"/C/Users/Andrew/Downloads/lnb-tech-pro/lnb-tech-pro/taxonomy-profiles.php",
+		"/C/Users/Andrew/Google Drive/LNB Custom CSS LESS/Al's Plumbing/alsplumbing"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".overflow-hidden",
+			".overflow-hidden()",
+			".skew(-10deg)",
+			"s)",
+			".transition(",
+			"@purple",
+			"Plumbing",
+			"@red",
+			"2.4",
+			"> a",
+			":before",
+			"lba-icon",
+			";\n",
+			".skew-me;",
+			"hntr-thre",
+			"hunter-three",
+			"home-reviews-widget",
+			"column-count",
+			"colun-count",
+			"fusion-bu",
+			"height: 700px;",
+			";\n",
+			"responsive-list",
+			"responsive-",
+			"two-column",
+			"West Palm Beach",
+			", Florida, United States",
+			"reading-box-addition",
+			"reading-box-additioning",
+			"reading-box",
+			"#911c22",
+			"#194e94",
+			"75%",
+			"&gt; ",
+			"&gt;",
+			"Boca Raton",
+			"5em",
+			"(877) 677-2327",
+			"8776772327",
+			"10em",
+			"sticky",
+			"form-is",
+			"http://www.aap-homeservices.com",
+			"145px",
+			"column-count",
+			"post",
+			"blog",
+			"\"> <a",
+			"<span class=\"pipe\"> | </span>",
+			"<li class=\"pipe\"> | </li>",
+			"span",
+			"West Saint Paul",
+			"http://allamericandoormn.com/",
+			"/garage-doors/",
+			"allamericandoormn.com",
+			" dir=\"ltr\"",
+			"plan-benefits",
+			"lnb-schema-description-meta-box",
+			"\"",
+			"sidebar",
+			"home",
+			"home style",
+			"0.85",
+			"top-border",
+			"next",
+			"Review]",
+			" Review]",
+			"[Title re",
+			"transparent",
+			"max-width: 1200px",
+			"(877) 677-2327",
+			"8776772327",
+			"_self",
+			"gravity",
+			"gravity.",
+			"gravity",
+			"Western NY",
+			"repeat",
+			"{Company Name Here}",
+			"home-ho",
+			"home hori",
+			"http://watercureusa.com/reviews/",
+			"</li>",
+			"<li>",
+			"fadeInLeft",
+			"fadeinleft",
+			"left",
+			"fadeinleft",
+			"</span>",
+			"<span style=\"font-weight: 400;\">",
+			"    \n",
+			"content",
+			"Atascocita",
+			"calc",
+			"body",
+			"</li>",
+			"<li>",
+			"h2",
+			"form",
+			"nav",
+			"menu",
+			"Plano",
+			"Miranda Plumbing &amp; Air Conditioning",
+			"http://myelectricianfl.com/electrical_services_and_repair/",
+			", FL",
+			"</a>",
+			"<a title=",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			", FL ",
+			"</li>",
+			"<li>",
+			"Florida Ridge",
+			"Vero Beach",
+			"<a href=\"",
+			"</a>",
+			".",
+			" electrician",
+			"</a>",
+			" electrician",
+			"-electrician",
+			"/martin-county-electrician/",
+			"</li>",
+			"<li class=\"fusion-li-item size-med\">",
+			" electrician",
+			"-electrician",
+			"/palm-beach-electrician/",
+			"-electrician"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"overflow: hidden",
+			"transform:skew(-10deg)",
+			"s",
+			"transition: ",
+			"@yellow",
+			"Electrical",
+			"@purple",
+			"2",
+			"i",
+			" > a:before",
+			"has-icon",
+			".skew-me();",
+			"height: 650px;",
+			"[lnb-city]",
+			"",
+			"@red",
+			"@blue",
+			"50%",
+			"25%",
+			"",
+			"[lnb-city]",
+			"(844) 288-2007",
+			"8442882007",
+			"http://74.63.196.242/~aapallamericanpl",
+			"\"><a",
+			"",
+			"<span class=\"pipe\"> | </span>",
+			"li",
+			"[lnb-city]",
+			"http://74.63.227.178/~allamericandoor/",
+			"/garage-door-types/",
+			"74.63.227.178/~allamericandoor",
+			"",
+			"lnb-custom-schema-meta-box",
+			"'",
+			"0.95",
+			"previous",
+			"",
+			"Five Star Review in",
+			"@dark-blue",
+			"max-width: 1100px",
+			"(772) 871-7954",
+			"7728717954",
+			"_blank",
+			"[lnb-city], [lnb-state]",
+			"Watercure USA",
+			"http://74.63.227.178/~watercureusa/reviews/",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"",
+			"[lnb-city]",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"[lnb-city]",
+			"My Electrician",
+			"http://74.63.198.210/~myelectricianfl/electrical-service-repair/",
+			"",
+			"</a><span class=\"pipe\"> | </span>",
+			"<a itemprop=\"name\" title=",
+			"",
+			", FL",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"[lnb-city]",
+			"<a target=\"blank\" href=\"",
+			", FL</a>",
+			"</a>[/li_item]",
+			",",
+			"",
+			"</a>[/li_item]",
+			"",
+			", FL",
+			"-fl-electrician",
+			"/",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"",
+			"-fl-electrician",
+			"/",
+			"",
+			"-fl-electrician",
+			"",
+			", FL",
+			"http://74.63.198.210/~myelectricianfl/",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"",
+			", FL",
+			" ,FL",
+			"",
+			"<a target=\"blank\" href=\"",
+			"",
+			"[lnb-state]",
+			"[lnb-city]",
+			"</a><span class=\"pipe\"> | </span>",
+			"<span class=\"pipe\"> | </span>",
+			"<a itemprop=\"name\" ",
+			"",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"\t",
+			"<a target=\"blank\" href=\"",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"",
+			"http://74.63.196.242/~paschalcorp/",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"",
+			"-tx-",
+			"-plumber",
+			"http://74.63.196.242/~alsplumbing/plumbing-service-area",
+			"[lnb-city]",
+			"-heating-and-cooling",
+			"hvac-service-area",
+			"Heating & Cooling Services",
+			"[/li_item]",
+			"[li_item icon=\"\"]",
+			"[ln_item icon=\"\"]",
+			"[lnb-city]",
+			"faf9e3",
+			"d7ce21"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "admin-styles.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Andrew\\Google Drive\\LNB Theme Dev\\theme dev.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

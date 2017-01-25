@@ -1,0 +1,42 @@
+.citylist.footer-citylist ul {
+  list-style: none;
+}
+.citylist.footer-citylist ul > li {
+  padding: 10px 12px;
+}
+.citylist.footer-citylist ul > li > a {
+  display: block;
+  position: relative;
+}
+.citylist.footer-citylist ul > li > a:before {
+  position: absolute;
+  font-family: 'icomoon';
+  content: '\f105';
+  margin-left: -12px;
+}
+.citylist.footer-citylist ul.four-column-responsive-list {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+}
+@media screen and (max-width: 1000px) {
+  .citylist.footer-citylist ul.four-column-responsive-list {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+  }
+}
+@media screen and (max-width: 900px) {
+  .citylist.footer-citylist ul.four-column-responsive-list {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+@media screen and (max-width: 700px) {
+  .citylist.footer-citylist ul.four-column-responsive-list {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+}
