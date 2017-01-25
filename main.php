@@ -13,12 +13,12 @@ License: GPLv2 or later
 function lnb_schema_styles()  
 { 
 	if (!is_admin()) {
-		wp_register_style('widget-styles', plugins_url('/lnb-schema-options/css/widget-styles.css'));
+		wp_register_style('widget-styles', plugins_url('/schema-options/css/widget-styles.css'));
 		wp_enqueue_style('widget-styles');
 	}
 
 	if (is_admin()) {
-		wp_register_style('schema-admin-styles', plugins_url('/lnb-schema-options/css/admin-styles.css'));
+		wp_register_style('schema-admin-styles', plugins_url('/schema-options/css/admin-styles.css'));
 		wp_enqueue_style('schema-admin-styles');
 	}		
 }
