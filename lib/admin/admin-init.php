@@ -2,8 +2,8 @@
 
 class schema_admin_page {
 
-	function __contstruct() {
-		add_action('admin_menu', array($this,'lnb_schema_admin_options') );
+	function __construct() {
+		add_action('admin_menu', array( $this, 'admin_menu' ) );
 	}
 
 	function admin_menu() {
@@ -28,7 +28,7 @@ class schema_admin_page {
 				'schema_tel',
 				'schema_email',
 				'schema_url',
-				'schema_address_street',
+				'schema_address_street'
 			);
 
 			foreach ( $options as $opt ) {
@@ -85,7 +85,7 @@ class schema_admin_page {
 			),
 		);
 
-		ob_start() ?>
+		ob_start(); ?>
 
 			<script>
 			jQuery(document).ready(function($) {
@@ -195,10 +195,10 @@ class schema_admin_page {
 						</table>
 					</fieldset>
 				</div>
-			</div>
 			</form>	
-
-		<?php $html = ob_get_clean();
-		return $html;
+			</div>
+		<?php echo ob_get_clean();
 	}
 }
+
+?>
