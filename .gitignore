@@ -18,3 +18,5 @@ wp-content/plugins/hello.php
 
 *.sublime-project
 *.sublime-workspace
+
+css/node_modules/

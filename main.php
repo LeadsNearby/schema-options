@@ -10,20 +10,11 @@ License: GPLv2 or later
 */
 
 // Enqueue Styles
-function lnb_schema_styles()  
-{ 
-	if (!is_admin()) {
-		wp_register_style('widget-styles', plugins_url('/schema-options/css/widget-styles.css'));
-		wp_enqueue_style('widget-styles');
-	}
-
-	if (is_admin()) {
-		wp_register_style('schema-admin-styles', plugins_url('/schema-options/css/admin-styles.css'));
-		wp_enqueue_style('schema-admin-styles');
-	}		
+function lnb_schema_styles() { 
+	wp_register_style('schema-styles', plugins_url('/schema-options/css/schema-styles.css'));
+	wp_enqueue_style('schema-styles');	
 }
 add_action('wp_enqueue_scripts', 'lnb_schema_styles');
-add_action('admin_enqueue_scripts', 'lnb_schema_styles');
 
 //Creates Admin Page	
 add_action('admin_menu', 'lnb_schema_admin_options');
