@@ -11,10 +11,11 @@
 			flex-wrap: wrap;
 
 			> li {
-				// padding: 10px 12px;
+				padding: 0.5rem 1rem;
 
 				> a {
-					display: block;
+					display: inline-block;
+					text-align: left;
 					position: relative;
 					&:before {
 						position: absolute;
