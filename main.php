@@ -3,7 +3,7 @@
 Plugin URI: http://leadsnearby.com/
 Description: Creates admin page to enter global schema and adds a meta box to each page add schema page description and select custom schema itemtype for clients with more than one business veritical.
 
-Version: 1.1.4
+Version: 1.1.5
 Author: LeadsNearby
 Author URI: http://leadsnearby.com/
 License: GPLv2 or later
@@ -25,6 +25,12 @@ require_once(SchemaOptions_MAIN . '/shortcodes.php');
 require_once(SchemaOptions_MAIN . '/meta-boxes.php');
 
 if ( is_admin() ) {
+
+	add_filter('plugin_action_links_'. plugin_basename(__FILE__), 'schema_action_links' );
+    function schema_action_links( $links ) {
+		$links[] = '<a href="'. admin_url( 'options-general.php?page=schema-options' ) . '">Settings</a>';
+		return $links;
+	}
 
 	require_once( SchemaOptions_MAIN . '/lib/updater/github-updater.php' );
     new GitHubPluginUpdater( __FILE__, 'LeadsNearby', 'schema-options' );

@@ -38,52 +38,7 @@ class schema_admin_page {
 					update_option('lnb_'.$opt, $new_value);
 				}
 			}
-		}	
-
-		// Store Schema Itemtypes in Array
-		global $lnb_schema_itemtype_array;
-		$lnb_schema_itemtype_array = array(
-			'Electrician' => array(
-				'title' => 'Electrican',
-				'value' => 'Electrican',
-			),
-			'General Contractor' => array(
-				'title' => 'General Contractor',
-				'value' => 'GeneralContractor',
-			),
-			'Home & Construction Business' => array(
-				'title' => 'Home & Construction Business',
-				'value' => 'HomeAndConstructionBusiness',
-			),
-			'House Painter' => array(
-				'title' => 'House Painter',
-				'value' => 'HousePainter',
-			),
-			'HVAC' => array(
-				'title' => 'HVAC',
-				'value' => 'HVACBusiness',
-			),
-			'Local Business' => array(
-				'title' => 'Local Business',
-				'value' => 'LocalBusiness',
-			),
-			'Locksmith' => array(
-				'title' => 'Locksmith',
-				'value' => 'Locksmith',
-			),
-			'Moving Company' => array(
-				'title' => 'Moving Company',
-				'value' => 'MovingCompany',
-			),
-			'Plumber' => array(
-				'title' => 'Plumber',
-				'value' => 'Plumber',
-			),
-			'Roofing Contractor' => array(
-				'title' => 'Roofing Contractor',
-				'value' => 'RoofingContractor',
-			),
-		);
+		}
 
 		ob_start(); ?>
 
@@ -123,8 +78,7 @@ class schema_admin_page {
 								<td class="form-field">
 									<select class="" name="schema_itemtype" id="schema_itemtype"> 
 										<?php
-										global $lnb_schema_itemtype_array;
-										$schema_itemtype_array = $lnb_schema_itemtype_array;
+										$schema_itemtype_array = $this->get_schema_itemtypes();
 										foreach ($schema_itemtype_array as $option) { ?>
 											<option value="<?php echo $option['value']; ?>"<?php if(get_option('lnb_schema_itemtype') == $option['value'] ){ echo 'selected="selected"';}?>><?php echo $option['title']?></option>
 										<?php } ?>
@@ -198,6 +152,55 @@ class schema_admin_page {
 			</form>	
 			</div>
 		<?php echo ob_get_clean();
+	}
+
+	function get_schema_itemtypes() {
+
+		// Store Schema Itemtypes in Array
+		$lnb_schema_itemtype_array = array(
+			'Electrician' => array(
+				'title' => 'Electrican',
+				'value' => 'Electrican',
+			),
+			'General Contractor' => array(
+				'title' => 'General Contractor',
+				'value' => 'GeneralContractor',
+			),
+			'Home & Construction Business' => array(
+				'title' => 'Home & Construction Business',
+				'value' => 'HomeAndConstructionBusiness',
+			),
+			'House Painter' => array(
+				'title' => 'House Painter',
+				'value' => 'HousePainter',
+			),
+			'HVAC' => array(
+				'title' => 'HVAC',
+				'value' => 'HVACBusiness',
+			),
+			'Local Business' => array(
+				'title' => 'Local Business',
+				'value' => 'LocalBusiness',
+			),
+			'Locksmith' => array(
+				'title' => 'Locksmith',
+				'value' => 'Locksmith',
+			),
+			'Moving Company' => array(
+				'title' => 'Moving Company',
+				'value' => 'MovingCompany',
+			),
+			'Plumber' => array(
+				'title' => 'Plumber',
+				'value' => 'Plumber',
+			),
+			'Roofing Contractor' => array(
+				'title' => 'Roofing Contractor',
+				'value' => 'RoofingContractor',
+			),
+		);
+
+		return $lnb_schema_itemtype_array;
 	}
 }
 
