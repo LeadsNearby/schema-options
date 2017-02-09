@@ -34,7 +34,7 @@ function lnb_schema_area_served_shortcode ( $atts ) {
     // Shortcode HTML output
 	if ($schema_itemtype == $atts['itemtype']) {
 		ob_start();
-		echo "<div class='citylist footer-citylist'><div itemprop='areaServed' itemscope='' itemtype='http://schema.org/".$schema_itemtype."'>";
+		echo "<div class='citylist footer-citylist'><div itemscope='' itemtype='http://schema.org/".$schema_itemtype."'><span itemprop='name' content='".get_option('lnb_schema_itemname')."'></span>";
 	    if ($atts['type'] == 'textblock') {
             echo "<p>";
         } elseif ($atts['type'] == 'list') {
@@ -48,11 +48,11 @@ function lnb_schema_area_served_shortcode ( $atts ) {
     		//Build link for cities
     		$city_href = strtolower(str_ireplace(['{city}','{state}'],[str_replace(" ", "-", $cities),$atts['state']],$atts['url']));
     		if ($atts['type'] == 'textblock') {
-				echo "<span itemprop='name'><a href='".$city_href."'>".$cities."</a></span>";
+				echo "<span itemprop='areaServed'><a href='".$city_href."'>".$cities."</a></span>";
                 if (++$i != $num_cities) { echo "<span class='pipe'> | </span>";}
 			}
 			elseif ($atts['type'] == 'list') {
-				echo "<li itemprop='name'><a href='".$city_href."'>".$cities."</a></li>";
+				echo "<li itemprop='areaServed'><a href='".$city_href."'>".$cities."</a></li>";
 			}
     	}
     	if ($atts['type'] == 'textblock') { echo "<p>";} elseif ($atts['type'] == 'list') { echo "</ul>";}
