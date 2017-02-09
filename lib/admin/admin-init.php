@@ -159,8 +159,8 @@ class schema_admin_page {
 		// Store Schema Itemtypes in Array
 		$lnb_schema_itemtype_array = array(
 			'Electrician' => array(
-				'title' => 'Electrican',
-				'value' => 'Electrican',
+				'title' => 'Electrician',
+				'value' => 'Electrician',
 			),
 			'General Contractor' => array(
 				'title' => 'General Contractor',
