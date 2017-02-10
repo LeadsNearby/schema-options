@@ -23,9 +23,9 @@ add_action('admin_head', 'lnb_schema_styles');
 // Set Defaults on Activation
 function schema_options_activate() {
 	$options = array(
-		'lnb_schema_itemname' => get_blog_info( $show = 'name' ),
+		'lnb_schema_itemname' => get_bloginfo( $show = 'name' ),
 		'lnb_schema_itemtype' => 'LocalBusiness',
-		'lnb_schema_url' => get_blog_info( $show = 'url' ),
+		'lnb_schema_url' => get_bloginfo( $show = 'url' ),
 		);
 
 	foreach( $options as $option => $value ) {
