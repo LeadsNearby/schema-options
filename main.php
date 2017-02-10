@@ -20,6 +20,22 @@ function lnb_schema_styles() {
 add_action('wp_enqueue_scripts', 'lnb_schema_styles');
 add_action('admin_head', 'lnb_schema_styles');
 
+// Set Defaults on Activation
+function schema_options_activate() {
+	$options = array(
+		'lnb_schema_itemname' => get_blog_info( $show = 'name' ),
+		'lnb_schema_itemtype' => 'LocalBusiness',
+		'lnb_schema_url' => get_blog_info( $show = 'url' ),
+		);
+
+	foreach( $options as $option => $value ) {
+		if ( empty( $option ) ) :
+			update_option( $option, $value );
+		endif;
+	}
+}
+register_activation_hook(__FILE__, 'schema_options_activate');
+
 // Load Additional Files
 require_once(SchemaOptions_MAIN . '/shortcodes.php');
 require_once(SchemaOptions_MAIN . '/meta-boxes.php');
