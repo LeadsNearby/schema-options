@@ -12,7 +12,7 @@ function lnb_schema_description_callback($page) {
     echo "<p>Schema Type</p><label class='screen-reader-text' for='lnb-schema-itemtype'>Schema Itemtype</label><select name='lnb-schema-itemtype'><option value='default'";
     if (get_post_meta($page->ID, "lnb-schema-itemtype", true) == "") { echo " selected='yes'";}
     echo ">Default</option>";
-    $lnb_schema_itemtype_array = $schema_admin_page->get_schema_itemtypes();
+    $lnb_schema_itemtype_array = schema_admin_page::get_schema_itemtypes();
     foreach ($lnb_schema_itemtype_array as $option) {
         echo "<option value='".$option['value']."'";
         if (get_post_meta($page->ID, "lnb-schema-itemtype", true) == $option['value']) {

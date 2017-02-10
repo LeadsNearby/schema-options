@@ -38,6 +38,7 @@ function schema_options_activate() {
 register_activation_hook(__FILE__, 'schema_options_activate');
 
 // Load Additional Files
+require_once( SchemaOptions_MAIN . '/lib/admin/admin-init.php' );
 require_once(SchemaOptions_MAIN . '/shortcodes.php');
 require_once(SchemaOptions_MAIN . '/meta-boxes.php');
 
@@ -52,7 +53,6 @@ if ( is_admin() ) {
 	require_once( SchemaOptions_MAIN . '/lib/updater/github-updater.php' );
     new GitHubPluginUpdater( __FILE__, 'LeadsNearby', 'schema-options' );
 
-    require_once( SchemaOptions_MAIN . '/lib/admin/admin-init.php' );
     $schema_admin_page = new schema_admin_page;
 
 }
