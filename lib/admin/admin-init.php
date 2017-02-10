@@ -76,7 +76,7 @@ class schema_admin_page {
 									<label for="schema_itemtype">Select Type of Business</label>
 								</td>
 								<td class="form-field">
-									<select class="" name="schema_itemtype" id="schema_itemtype"> 
+									<select class="" name="schema_itemtype" id="schema_itemtype">
 										<?php
 										$schema_itemtype_array = $this->get_schema_itemtypes();
 										foreach ($schema_itemtype_array as $option) { ?>

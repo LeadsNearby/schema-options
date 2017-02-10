@@ -12,7 +12,7 @@ function lnb_schema_description_callback($page) {
     echo "<p>Schema Type</p><label class='screen-reader-text' for='lnb-schema-itemtype'>Schema Itemtype</label><select name='lnb-schema-itemtype'><option value='default'";
     if (get_post_meta($page->ID, "lnb-schema-itemtype", true) == "") { echo " selected='yes'";}
     echo ">Default</option>";
-    global $lnb_schema_itemtype_array;
+    $lnb_schema_itemtype_array = $schema_admin_page->get_schema_itemtypes();
     foreach ($lnb_schema_itemtype_array as $option) {
         echo "<option value='".$option['value']."'";
         if (get_post_meta($page->ID, "lnb-schema-itemtype", true) == $option['value']) {
@@ -58,7 +58,7 @@ function add_lnb_page_description_schema() {
     else {
         $lnb_schema_itemtype = $lnb_schema_itemtype_default;
     }
-    $lnb_schema_description_text_html = "<div itemscope='' itemtype='http://schema.org/".$lnb_schema_itemtype."'><span itemprop='description' content='".$lnb_schema_description_text_value."'></span></div>";
+    $lnb_schema_description_text_html = "<div itemscope='' itemtype='http://schema.org/".$lnb_schema_itemtype."'><span itemprop='name' content='".get_option('lnb_schema_itemname')."'></span><span itemprop='description' content='".$lnb_schema_description_text_value."'></span></div>";
 
     if (!empty($lnb_schema_description_text_value)) {
         echo "<!-- Schema Page Description -->";
