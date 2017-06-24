@@ -15,6 +15,6 @@ CHANGELOG.txt export-ignore
 *changelog.txt export-ignore
 *changelog.html export-ignore
 # sass files
-css/sass
-css/gulpfile.js
-css/package.json
+css/sass export-ignore
+css/gulpfile.js export-ignore
+css/package.json export-ignore
