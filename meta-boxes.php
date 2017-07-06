@@ -1,7 +1,7 @@
 <?php
 
 function lnb_schema_description_meta_box() {
-    add_meta_box('lnb-custom-schema-meta-box', 'Custom Schema Options', 'lnb_schema_description_callback', 'page', 'side', 'default', null);
+    add_meta_box('lnb-custom-schema-meta-box', 'Custom Schema Options', 'lnb_schema_description_callback', array('page','post'), 'side', 'default', null);
 }
 
 add_action('add_meta_boxes', 'lnb_schema_description_meta_box');
