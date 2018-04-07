@@ -63,15 +63,27 @@
 #lnb-schema-wrapper {
   padding: 35px 15px;
   margin-top: 0.5em;
-  width: 50%; }
+  width: 90%; }
+  #lnb-schema-wrapper ul.ui-tabs-nav {
+    background: #0073aa; }
+  #lnb-schema-wrapper .ui-state-default {
+    background: #d6d6d6;
+    border: none;
+    border-radius: 0 !important; }
+  #lnb-schema-wrapper .ui-state-active {
+    background: #f9f9f9;
+    border: none;
+    border-radius: 0 !important; }
+  #lnb-schema-wrapper .ui-tabs .ui-tabs-nav li {
+    margin: 0 .2em -1px 0; }    
   #lnb-schema-wrapper #tabs {
-    background: #222 !important; }
+    background: #f9f9f9 !important; }
   #lnb-schema-wrapper legend * {
-    color: #FFA409; }
+    color: #333; }
   #lnb-schema-wrapper .form-table .description {
     width: 25%; }
     #lnb-schema-wrapper .form-table .description label {
-      color: #ededed; }
+      color: #666; }
   #lnb-schema-wrapper .form-table .form-field {
     width: 70%; }
     #lnb-schema-wrapper .form-table .form-field input, #lnb-schema-wrapper .form-table .form-field select, #lnb-schema-wrapper .form-table .form-field textarea {
@@ -79,16 +91,16 @@
       outline: none !important;
       -webkit-transition: border-color, 0.5s;
       transition: border-color, 0.5s;
-      border-radius: 5px;
-      border-width: 2px; }
+      border-radius: 1px;
+      border-width: 1px; }
       #lnb-schema-wrapper .form-table .form-field input:focus, #lnb-schema-wrapper .form-table .form-field select:focus, #lnb-schema-wrapper .form-table .form-field textarea:focus {
         border-color: #FFA409; }
       #lnb-schema-wrapper .form-table .form-field input.small, #lnb-schema-wrapper .form-table .form-field select.small, #lnb-schema-wrapper .form-table .form-field textarea.small {
-        width: 30% !important; }
+        width: 36% !important; }
       #lnb-schema-wrapper .form-table .form-field input.medium, #lnb-schema-wrapper .form-table .form-field select.medium, #lnb-schema-wrapper .form-table .form-field textarea.medium {
         width: 60% !important; }
       #lnb-schema-wrapper .form-table .form-field input.large, #lnb-schema-wrapper .form-table .form-field select.large, #lnb-schema-wrapper .form-table .form-field textarea.large {
-        width: 80% !important; }
+        width: 100% !important; }
 
 .clear {
   clear: both; }
