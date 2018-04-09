@@ -28,7 +28,9 @@ class schema_admin_page {
 				'schema_tel',
 				'schema_email',
 				'schema_url',
-				'schema_address_street'
+				'schema_address_street',
+				'schema_priceRange',
+				'schema_logo'
 			);
 
 			foreach ( $options as $opt ) {
@@ -63,12 +65,20 @@ class schema_admin_page {
 					<fieldset>
 					<legend><h2>General Settings</h2></legend>
 						<table class="form-table">
+						    <tr valign="top">
+								<td class="description">
+									<label for="schema_logo">Company Logo URL</label>
+								</td>
+								<td class="form-field">
+									<input name="schema_logo" type="text" id="schema_logo" class="large" value="<?php echo get_option('lnb_schema_logo'); ?>" class="regular-text" />
+								</td>
+							</tr>
 							<tr valign="top">
 								<td class="description">
 									<label for="schema_itemname">Company Name</label>
 								</td>
 								<td class="form-field">
-									<input name="schema_itemname" type="text" id="schema_itemname" class="medium" value="<?php echo get_option('lnb_schema_itemname'); ?>" class="regular-text" />
+									<input name="schema_itemname" type="text" id="schema_itemname" class="large" value="<?php echo get_option('lnb_schema_itemname'); ?>" class="regular-text" />
 								</td>
 							</tr>			
 							<tr>
@@ -85,6 +95,14 @@ class schema_admin_page {
 									</select>
 								</td>
 							</tr>
+                            <tr valign="top">
+								<td class="description">
+									<label for="schema_priceRange">Price Range</label>
+								</td>
+								<td class="form-field">
+									<input name="schema_priceRange" type="text" id="schema_priceRange" class="small" value="<?php echo get_option('lnb_schema_priceRange'); ?>" class="regular-text" />
+								</td>
+							</tr>							
 							<tr>
 								<td colspan="2">
 									<p class="submit">
@@ -119,7 +137,7 @@ class schema_admin_page {
 									<label for="schema_tel">Telephone Number</label>
 								</td>
 								<td class="form-field">
-									<input name="schema_tel" type="tel" id="schema_tel" class="medium" value="<?php echo get_option('lnb_schema_tel'); ?>" class="regular-text" />
+									<input name="schema_tel" type="tel" id="schema_tel" class="large" value="<?php echo get_option('lnb_schema_tel'); ?>" class="regular-text" />
 								</td>
 							</tr>
 							<tr>
@@ -127,7 +145,7 @@ class schema_admin_page {
 									<label for="schema_email">Email Address</label>
 								</td>
 								<td class="form-field">
-									<input name="schema_email" type="email" id="schema_email" class="medium" value="<?php echo get_option('lnb_schema_email'); ?>" class="regular-text" />
+									<input name="schema_email" type="email" id="schema_email" class="large" value="<?php echo get_option('lnb_schema_email'); ?>" class="regular-text" />
 								</td>
 							</tr>
 							<tr>
@@ -135,7 +153,7 @@ class schema_admin_page {
 									<label for="schema_url">Web Address (URL)</label>
 								</td>
 								<td class="form-field">
-									<input name="schema_url" type="url" id="schema_url" pattern="https?://.+" class="medium" value="<?php echo get_option('lnb_schema_url'); ?>" class="regular-text" />
+									<input name="schema_url" type="url" id="schema_url" pattern="https?://.+" class="large" value="<?php echo get_option('lnb_schema_url'); ?>" class="regular-text" />
 								</td>
 							</tr>
 							<tr>

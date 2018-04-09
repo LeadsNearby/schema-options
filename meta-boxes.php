@@ -58,7 +58,7 @@ function add_lnb_page_description_schema() {
     else {
         $lnb_schema_itemtype = $lnb_schema_itemtype_default;
     }
-    $lnb_schema_description_text_html = "<div itemscope='' itemtype='http://schema.org/".$lnb_schema_itemtype."'><span itemprop='name' content='".get_option('lnb_schema_itemname')."'></span><span itemprop='description' content='".$lnb_schema_description_text_value."'></span></div>";
+    $lnb_schema_description_text_html = "<div itemscope='' itemtype='http://schema.org/".$lnb_schema_itemtype."'><span itemprop='image' content='".get_option('lnb_schema_logo')."'></span><span itemprop='address' content='".get_option('lnb_schema_address_street')."'></span><span itemprop='url' content='".get_option('lnb_schema_url')."'></span><span itemprop='telephone' content='".get_option('lnb_schema_tel')."'><span itemprop='priceRange' content='".get_option('lnb_schema_priceRange')."'></span></span><span itemprop='name' content='".get_option('lnb_schema_itemname')."'></span><span itemprop='description' content='".$lnb_schema_description_text_value."'></span></div>";
 
     if (!empty($lnb_schema_description_text_value)) {
         echo "<!-- Schema Page Description -->";
