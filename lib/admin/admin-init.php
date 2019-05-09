@@ -2,47 +2,61 @@
 
 class schema_admin_page {
 
-	function __construct() {
-		add_action('admin_menu', array( $this, 'admin_menu' ) );
-	}
+    public function __construct() {
+        add_action('admin_menu', array($this, 'admin_menu'));
+    }
 
-	function admin_menu() {
-		add_options_page(
-			'Schema Options',
-			'Schema Options',
-			'manage_options',
-			'schema-options',
-			array(
-				$this,
-				'settings_page'
-			)
-		);
-	}
+    public function admin_menu() {
+        if (is_plugin_active('lnb-core/lnb-core.php')) {
+            add_submenu_page(
+                'lnb-settings.php',
+                'Schema Options',
+                'Schema Options',
+                'manage_options',
+                'schema-options',
+                array(
+                    $this,
+                    'settings_page',
+                )
+            );
+        } else {
+            add_options_page(
+                'Schema Options',
+                'Schema Options',
+                'manage_options',
+                'schema-options',
+                array(
+                    $this,
+                    'settings_page',
+                )
+            );
+        }
+    }
 
-	function settings_page() {
+    public function settings_page() {
 
-		if ( count($_POST) > 0 ) {
-			$options = array (
-				'schema_itemtype',
-				'schema_itemname',
-				'schema_tel',
-				'schema_email',
-				'schema_url',
-				'schema_address_street',
-				'schema_priceRange',
-				'schema_logo'
-			);
+        if (count($_POST) > 0) {
+            $options = array(
+                'schema_itemtype',
+                'schema_itemname',
+                'schema_tel',
+                'schema_email',
+                'schema_url',
+                'schema_address_street',
+                'schema_priceRange',
+                'schema_logo',
+            );
 
-			foreach ( $options as $opt ) {
-				$old_value = get_option('lnb_'.$opt);
-				$new_value = $_POST[$opt];
-				if ($old_value != $new_value) {
-					update_option('lnb_'.$opt, $new_value);
-				}
-			}
-		}
+            foreach ($options as $opt) {
+                $old_value = get_option('lnb_' . $opt);
+                $new_value = $_POST[$opt];
+                if ($old_value != $new_value) {
+                    update_option('lnb_' . $opt, $new_value);
+                }
+            }
+        }
 
-		ob_start(); ?>
+        ob_start();?>
 
 			<script>
 			jQuery(document).ready(function($) {
@@ -55,7 +69,7 @@ class schema_admin_page {
 
 			<div id="lnb-schema-wrapper">
 			<form method="post" action="">
-			<h1>Schema for <?php echo get_bloginfo( 'name' ); ?></h1>
+			<h1>Schema for <?php echo get_bloginfo('name'); ?></h1>
 			<div id ="tabs">
 				<ul>
 					<li><a href="#gen-settings">General</a></li>
@@ -80,7 +94,7 @@ class schema_admin_page {
 								<td class="form-field">
 									<input name="schema_itemname" type="text" id="schema_itemname" class="large" value="<?php echo get_option('lnb_schema_itemname'); ?>" class="regular-text" />
 								</td>
-							</tr>			
+							</tr>
 							<tr>
 								<td class="description">
 									<label for="schema_itemtype">Select Type of Business</label>
@@ -88,10 +102,10 @@ class schema_admin_page {
 								<td class="form-field">
 									<select class="" name="schema_itemtype" id="schema_itemtype">
 										<?php
-										$schema_itemtype_array = $this->get_schema_itemtypes();
-										foreach ($schema_itemtype_array as $option) { ?>
-											<option value="<?php echo $option['value']; ?>"<?php if(get_option('lnb_schema_itemtype') == $option['value'] ){ echo 'selected="selected"';}?>><?php echo $option['title']?></option>
-										<?php } ?>
+$schema_itemtype_array = $this->get_schema_itemtypes();
+        foreach ($schema_itemtype_array as $option) {?>
+											<option value="<?php echo $option['value']; ?>"<?php if (get_option('lnb_schema_itemtype') == $option['value']) {echo 'selected="selected"';}?>><?php echo $option['title'] ?></option>
+										<?php }?>
 									</select>
 								</td>
 							</tr>
@@ -102,7 +116,7 @@ class schema_admin_page {
 								<td class="form-field">
 									<input name="schema_priceRange" type="text" id="schema_priceRange" class="small" value="<?php echo get_option('lnb_schema_priceRange'); ?>" class="regular-text" />
 								</td>
-							</tr>							
+							</tr>
 							<tr>
 								<td colspan="2">
 									<p class="submit">
@@ -110,8 +124,8 @@ class schema_admin_page {
 										<input type="hidden" name="lnb_schema_admin_html" value="save" style="display:none;" />
 									</p>
 								</td>
-							</tr>												
-						</table>			
+							</tr>
+						</table>
 					</fieldset>
 				</div>
 				<div id="contact-page-settings">
@@ -163,63 +177,63 @@ class schema_admin_page {
 										<input type="hidden" name="lnb_schema_admin_html" value="save" style="display:none;" />
 									</p>
 								</td>
-							</tr>												
+							</tr>
 						</table>
 					</fieldset>
 				</div>
-			</form>	
+			</form>
 			</div>
 		<?php echo ob_get_clean();
-	}
+    }
 
-	function get_schema_itemtypes() {
+    public function get_schema_itemtypes() {
 
-		// Store Schema Itemtypes in Array
-		$lnb_schema_itemtype_array = array(
-			'Electrician' => array(
-				'title' => 'Electrician',
-				'value' => 'Electrician',
-			),
-			'General Contractor' => array(
-				'title' => 'General Contractor',
-				'value' => 'GeneralContractor',
-			),
-			'Home & Construction Business' => array(
-				'title' => 'Home & Construction Business',
-				'value' => 'HomeAndConstructionBusiness',
-			),
-			'House Painter' => array(
-				'title' => 'House Painter',
-				'value' => 'HousePainter',
-			),
-			'HVAC' => array(
-				'title' => 'HVAC',
-				'value' => 'HVACBusiness',
-			),
-			'Local Business' => array(
-				'title' => 'Local Business',
-				'value' => 'LocalBusiness',
-			),
-			'Locksmith' => array(
-				'title' => 'Locksmith',
-				'value' => 'Locksmith',
-			),
-			'Moving Company' => array(
-				'title' => 'Moving Company',
-				'value' => 'MovingCompany',
-			),
-			'Plumber' => array(
-				'title' => 'Plumber',
-				'value' => 'Plumber',
-			),
-			'Roofing Contractor' => array(
-				'title' => 'Roofing Contractor',
-				'value' => 'RoofingContractor',
-			),
-		);
+        // Store Schema Itemtypes in Array
+        $lnb_schema_itemtype_array = array(
+            'Electrician' => array(
+                'title' => 'Electrician',
+                'value' => 'Electrician',
+            ),
+            'General Contractor' => array(
+                'title' => 'General Contractor',
+                'value' => 'GeneralContractor',
+            ),
+            'Home & Construction Business' => array(
+                'title' => 'Home & Construction Business',
+                'value' => 'HomeAndConstructionBusiness',
+            ),
+            'House Painter' => array(
+                'title' => 'House Painter',
+                'value' => 'HousePainter',
+            ),
+            'HVAC' => array(
+                'title' => 'HVAC',
+                'value' => 'HVACBusiness',
+            ),
+            'Local Business' => array(
+                'title' => 'Local Business',
+                'value' => 'LocalBusiness',
+            ),
+            'Locksmith' => array(
+                'title' => 'Locksmith',
+                'value' => 'Locksmith',
+            ),
+            'Moving Company' => array(
+                'title' => 'Moving Company',
+                'value' => 'MovingCompany',
+            ),
+            'Plumber' => array(
+                'title' => 'Plumber',
+                'value' => 'Plumber',
+            ),
+            'Roofing Contractor' => array(
+                'title' => 'Roofing Contractor',
+                'value' => 'RoofingContractor',
+            ),
+        );
 
-		return $lnb_schema_itemtype_array;
-	}
+        return $lnb_schema_itemtype_array;
+    }
 }
 
 ?>
