@@ -1,8 +1,8 @@
 <?php
-/* Plugin Name: LeadsNearby Schema Options
+/*
+Plugin Name: LeadsNearby Schema Options
 Plugin URI: http://leadsnearby.com/
 Description: Creates admin page to enter global schema and adds a meta box to each page add schema page description and select custom schema itemtype for clients with more than one business veritical.
-
 Version: 1.2.4
 Author: LeadsNearby
 Author URI: http://leadsnearby.com/
@@ -58,4 +58,3 @@ add_action('admin_init', function () {
 
 // Load Additional Files
 require_once SchemaOptions_MAIN . '/shortcodes.php';
-require_once SchemaOptions_MAIN . '/meta-boxes.php';
