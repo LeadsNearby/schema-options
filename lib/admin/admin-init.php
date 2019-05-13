@@ -38,12 +38,11 @@ class schema_admin_page {
         if (count($_POST) > 0) {
             $options = array(
                 'schema_itemtype',
-                'schema_itemname',
                 'schema_tel',
                 'schema_email',
                 'schema_url',
                 'schema_address_street',
-                'schema_priceRange',
+                'schema_pricerange',
                 'schema_logo',
             );
 
@@ -58,113 +57,88 @@ class schema_admin_page {
 
         ob_start();?>
 
-			<script>
-			jQuery(document).ready(function($) {
-				$(init);
-				function init(){
-					$("#tabs").tabs();
-				}
-			});
-			</script>
-
 			<div id="lnb-schema-wrapper">
 			<form method="post" action="">
 			<h1>Schema for <?php echo get_bloginfo('name'); ?></h1>
-			<div id ="tabs">
-				<ul>
-					<li><a href="#gen-settings">General</a></li>
-					<li><a href="#contact-page-settings">Contact Page</a></li>
-				</ul>
-				<div id="gen-settings">
-					<fieldset>
-					<legend><h2>General Settings</h2></legend>
-						<table class="form-table">
-							<tr>
-								<td class="description">
-									<label for="schema_itemtype">Select Type of Business</label>
-								</td>
-								<td class="form-field">
-									<select class="" name="schema_itemtype" id="schema_itemtype">
-										<?php
-$schema_itemtype_array = $this->get_schema_itemtypes();
+			<fieldset>
+				<table class="form-table" style="max-width: 750px">
+					<tr>
+						<td class="description">
+							<label for="schema_itemtype">Select Type of Business</label>
+						</td>
+						<td class="form-field">
+							<select class="" name="schema_itemtype" id="schema_itemtype">
+								<?php $schema_itemtype_array = $this->get_schema_itemtypes();
         foreach ($schema_itemtype_array as $option) {?>
-											<option value="<?php echo $option['value']; ?>"<?php if (get_option('lnb_schema_itemtype') == $option['value']) {echo 'selected="selected"';}?>><?php echo $option['title'] ?></option>
-										<?php }?>
-									</select>
-								</td>
-							</tr>
-                            <tr valign="top">
-								<td class="description">
-									<label for="schema_priceRange">Price Range</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_priceRange" type="text" id="schema_priceRange" class="small" value="<?php echo get_option('lnb_schema_priceRange'); ?>" class="regular-text" />
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<p class="submit">
-										<input type="submit" name="Submit" class="button-primary" value="Save Changes" />
-										<input type="hidden" name="lnb_schema_admin_html" value="save" style="display:none;" />
-									</p>
-								</td>
-							</tr>
-						</table>
-					</fieldset>
-				</div>
-				<div id="contact-page-settings">
-					<fieldset>
-					<legend><h2>Contact Page Settings</h2></legend>
-						<table class="form-table">
-							<tr>
-								<td>
-									<label for="schema_address_street">Address</label>
-								</td>
-								<td>
-									<table class="form-table">
-										<tr>
-											<td colspan="3" class="form-field">
-												<input name="schema_address_street" type="text" id="schema_address_street" placeholder="Street Address" value="<?php echo get_option('lnb_schema_address_street'); ?>"/>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td class="description">
-									<label for="schema_tel">Telephone Number</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_tel" type="tel" id="schema_tel" class="large" value="<?php echo get_option('lnb_schema_tel'); ?>" class="regular-text" />
-								</td>
-							</tr>
-							<tr>
-								<td class="description">
-									<label for="schema_email">Email Address</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_email" type="email" id="schema_email" class="large" value="<?php echo get_option('lnb_schema_email'); ?>" class="regular-text" />
-								</td>
-							</tr>
-							<tr>
-								<td class="description">
-									<label for="schema_url">Web Address (URL)</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_url" type="url" id="schema_url" pattern="https?://.+" class="large" value="<?php echo get_option('lnb_schema_url'); ?>" class="regular-text" />
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<p class="submit">
-										<input type="submit" name="Submit" class="button-primary" value="Save Changes" />
-										<input type="hidden" name="lnb_schema_admin_html" value="save" style="display:none;" />
-									</p>
-								</td>
-							</tr>
-						</table>
-					</fieldset>
-				</div>
+									<option value="<?php echo $option['value']; ?>"<?php if (get_option('lnb_schema_itemtype') == $option['value']) {echo 'selected="selected"';}?>><?php echo $option['title'] ?></option>
+								<?php }?>
+							</select>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td class="description" width="">
+							<label for="schema_priceRange">Price Range</label>
+						</td>
+						<td class="form-field" width="">
+							<select class="" name="schema_pricerange" id="schema_pricerange">
+								<?php $pricerange_array = array('$', '$$', '$$$', '$$$$');
+        foreach ($pricerange_array as $price) {?>
+									<option
+										value="<?php echo $price; ?>"
+										<?php if (get_option('lnb_schema_pricerange', '$$') == $price) {echo 'selected="selected"';}?>
+									><?php echo $price; ?></option>
+								<?php }?>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="schema_address_street">Address</label>
+						</td>
+						<td>
+							<table class="form-table">
+								<tr>
+									<td class="form-field">
+										<input name="schema_address_street" type="text" id="schema_address_street" value="<?php echo get_option('lnb_schema_address_street'); ?>"/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="description">
+							<label for="schema_tel">Telephone Number</label>
+						</td>
+						<td class="form-field">
+							<input name="schema_tel" type="tel" id="schema_tel" class="large" value="<?php echo get_option('lnb_schema_tel'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr>
+						<td class="description">
+							<label for="schema_email">Email Address</label>
+						</td>
+						<td class="form-field">
+							<input name="schema_email" type="email" id="schema_email" class="large" value="<?php echo get_option('lnb_schema_email'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr>
+						<td class="description">
+							<label for="schema_url">Web Address (URL)</label>
+						</td>
+						<td class="form-field">
+							<input name="schema_url" type="url" id="schema_url" pattern="https?://.+" class="large" value="<?php echo get_option('lnb_schema_url'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="submit">
+								<input type="submit" name="Submit" class="button-primary" value="Save Changes" />
+								<input type="hidden" name="lnb_schema_admin_html" value="save" style="display:none;" />
+							</p>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
 			</form>
 			</div>
 		<?php echo ob_get_clean();
