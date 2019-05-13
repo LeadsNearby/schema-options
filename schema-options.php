@@ -60,10 +60,23 @@ add_action('admin_init', function () {
 require_once SchemaOptions_MAIN . '/shortcodes.php';
 
 add_filter('wpseo_schema_organization', function ($graph_piece) {
-    $graph_piece['@type'] = 'LocalBusiness';
+    // Switch type from Organization
+    $type = get_option('lnb_schema_itemtype', 'LocalBusiness');
+    $graph_piece['@type'] = $type;
     if (class_exists('Avada')) {
         $theme_social_links = Avada()->settings->get('social_media_icons', 'url');
+        $theme_logo = Avada()->settings->get('logo');
     }
     $graph_piece['sameAs'] = array_values(array_unique(array_filter(array_merge($graph_piece['sameAs'], $theme_social_links))));
+    if ($theme_logo) {
+        $graph_piece['logo'] = array(
+            '@type' => 'ImageObject',
+            '@id' => trailingslashit(site_url()) . '#logo',
+            'url' => $theme_logo['url'],
+        );
+        $graph_piece['image'] = array(
+            '@id' => trailingslashit(site_url()) . '#logo',
+        );
+    }
     return $graph_piece;
 }, 10);
