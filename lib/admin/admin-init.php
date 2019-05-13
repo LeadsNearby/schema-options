@@ -79,22 +79,6 @@ class schema_admin_page {
 					<fieldset>
 					<legend><h2>General Settings</h2></legend>
 						<table class="form-table">
-						    <tr valign="top">
-								<td class="description">
-									<label for="schema_logo">Company Logo URL</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_logo" type="text" id="schema_logo" class="large" value="<?php echo get_option('lnb_schema_logo'); ?>" class="regular-text" />
-								</td>
-							</tr>
-							<tr valign="top">
-								<td class="description">
-									<label for="schema_itemname">Company Name</label>
-								</td>
-								<td class="form-field">
-									<input name="schema_itemname" type="text" id="schema_itemname" class="large" value="<?php echo get_option('lnb_schema_itemname'); ?>" class="regular-text" />
-								</td>
-							</tr>
 							<tr>
 								<td class="description">
 									<label for="schema_itemtype">Select Type of Business</label>
