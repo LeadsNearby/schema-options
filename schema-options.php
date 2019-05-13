@@ -78,5 +78,16 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
             '@id' => trailingslashit(site_url()) . '#logo',
         );
     }
+    $lnb_schema_props = array(
+        'priceRange' => get_option('lnb_schema_pricerange'),
+        'address' => get_option('lnb_schema_address_street'),
+        'telephone' => get_option('lnb_schema_tel'),
+        'email' => get_option('lnb_schema_email'),
+    );
+    foreach ($lnb_schema_props as $lnb_schema_prop => $lnb_schema_prop_value) {
+        if (!empty($lnb_schema_prop_value)) {
+            $graph_piece[$lnb_schema_prop] = $lnb_schema_prop_value;
+        }
+    }
     return $graph_piece;
 }, 10);
