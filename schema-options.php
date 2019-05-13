@@ -63,6 +63,10 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
     // Switch type from Organization
     $type = get_option('lnb_schema_itemtype', 'LocalBusiness');
     $graph_piece['@type'] = $type;
+    if (empty($graph_piece['name'])) {
+        $wp_site_name = get_bloginfo('name');
+        $graph_piece['name'] = $wp_site_name;
+    }
     if (class_exists('Avada')) {
         $theme_social_links = Avada()->settings->get('social_media_icons', 'url');
         $theme_logo = Avada()->settings->get('logo');
