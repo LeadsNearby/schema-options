@@ -58,3 +58,12 @@ add_action('admin_init', function () {
 
 // Load Additional Files
 require_once SchemaOptions_MAIN . '/shortcodes.php';
+
+add_filter('wpseo_schema_organization', function ($graph_piece) {
+    $graph_piece['@type'] = 'LocalBusiness';
+    if (class_exists('Avada')) {
+        $theme_social_links = Avada()->settings->get('social_media_icons', 'url');
+    }
+    $graph_piece['sameAs'] = array_values(array_unique(array_filter(array_merge($graph_piece['sameAs'], $theme_social_links))));
+    return $graph_piece;
+}, 10);
