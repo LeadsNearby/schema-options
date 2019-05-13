@@ -72,7 +72,7 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
         $theme_logo = Avada()->settings->get('logo');
     }
     $graph_piece['sameAs'] = array_values(array_unique(array_filter(array_merge($graph_piece['sameAs'], $theme_social_links))));
-    if ($theme_logo) {
+    if ($theme_logo && empty($graph_piece['logo'])) {
         $graph_piece['logo'] = array(
             '@type' => 'ImageObject',
             '@id' => trailingslashit(site_url()) . '#logo',
