@@ -67,6 +67,15 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
         $wp_site_name = get_bloginfo('name');
         $graph_piece['name'] = $wp_site_name;
     }
+
+    // Make mainEntityOfPage
+    $permalink = get_the_permalink();
+    if ($permalink) {
+        $organization['mainEntityOfPage'] = array(
+            '@id' => trailingslashit(get_the_permalink()) . '#webpage',
+        );
+    }
+
     if (class_exists('Avada')) {
         $theme_social_links = Avada()->settings->get('social_media_icons', 'url');
         $theme_logo = Avada()->settings->get('logo');
