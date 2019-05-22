@@ -3,7 +3,7 @@
 Plugin Name: LeadsNearby Schema Options
 Plugin URI: http://leadsnearby.com/
 Description: Creates admin page to enter global schema and adds a meta box to each page add schema page description and select custom schema itemtype for clients with more than one business veritical.
-Version: 2.0.1
+Version: 2.0.2
 Author: LeadsNearby
 Author URI: http://leadsnearby.com/
 License: GPLv2 or later
@@ -67,6 +67,15 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
         $wp_site_name = get_bloginfo('name');
         $graph_piece['name'] = $wp_site_name;
     }
+
+    // Make mainEntityOfPage
+    $permalink = get_the_permalink();
+    if ($permalink) {
+        $organization['mainEntityOfPage'] = array(
+            '@id' => trailingslashit(get_the_permalink()) . '#webpage',
+        );
+    }
+
     if (class_exists('Avada')) {
         $theme_social_links = Avada()->settings->get('social_media_icons', 'url');
         $theme_logo = Avada()->settings->get('logo');
