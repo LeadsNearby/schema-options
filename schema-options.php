@@ -12,14 +12,6 @@ License: GPLv2 or later
 // Definitions
 define('SchemaOptions_MAIN', plugin_dir_path(__FILE__));
 
-// Enqueue Styles
-function lnb_schema_styles() {
-    wp_register_style('schema-styles', plugins_url('css/schema-styles.css', __FILE__));
-    wp_enqueue_style('schema-styles');
-}
-add_action('wp_enqueue_scripts', 'lnb_schema_styles');
-add_action('admin_head', 'lnb_schema_styles');
-
 // Set Defaults on Activation
 function schema_options_activate() {
     $options = array(
