@@ -63,7 +63,7 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
     // Make mainEntityOfPage
     $permalink = get_the_permalink();
     if ($permalink) {
-        $organization['mainEntityOfPage'] = array(
+        $graph_piece['mainEntityOfPage'] = array(
             '@id' => trailingslashit(get_the_permalink()) . '#webpage',
         );
     }
