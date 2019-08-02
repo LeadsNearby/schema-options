@@ -85,6 +85,18 @@ add_filter('wpseo_schema_organization', function ($graph_piece) {
             '@id' => trailingslashit(site_url()) . '#logo',
         );
     }
+
+    $latitude = get_option('lnb_schema_address_lat');
+    $longitude = get_option('lnb_schema_address_lng');
+
+    if (!empty($latitude) && !empty($longitude)) {
+        $graph_piece['geo'] = array(
+            '@type' => 'GeoCoordinates',
+            'latitude' => $latitude,
+            'longitude' => $longitude,
+        );
+    }
+
     $lnb_schema_props = array(
         'priceRange' => get_option('lnb_schema_pricerange'),
         'address' => get_option('lnb_schema_address_street'),
